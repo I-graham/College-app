@@ -1,2 +1,2 @@
-print("Content-type : text/html")
+print("Content-type : text/plain")
 print(open("template.html").read())

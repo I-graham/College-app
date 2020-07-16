@@ -1,5 +1,5 @@
 <?php
 
-	echo shell_exec("python python.py");
+	echo file_get_contents("../template.html");
 
 ?>

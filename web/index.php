@@ -9,10 +9,11 @@
 
 		$output .= file_get_contents("../templates/template.html");
 
-		return $output;
+		echo $output;
 	}
   
 	set_error_handler("customError");
-	echo main();
+
+	main();
 
 ?>

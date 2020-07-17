@@ -10,9 +10,9 @@
 
 		$output .= file_get_contents("../templates/template.html");
 
-		return $output;
+		echo $output;
 	}
   
-	echo main();
+	main();
 
 ?>

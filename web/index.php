@@ -1,6 +1,6 @@
 <?php
 
-	function customError($errno, $errstr) {
+/*	function customError($errno, $errstr) {
 		echo "<b>Error:</b> [$errno] $errstr";
 	}
 
@@ -12,8 +12,8 @@
 		echo $output;
 	}
   
-	//set_error_handler("customError");
-
-	echo file_get_contents("../templates/template.html");
+	set_error_handler("customError");
+*/
+	echo "hi"; //file_get_contents("../templates/template.html");
 
 ?>

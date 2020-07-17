@@ -12,7 +12,7 @@
 		echo $output;
 	}
   
-	set_error_handler("customError");
+	//set_error_handler("customError");
 
 	echo file_get_contents("../templates/template.html");
 

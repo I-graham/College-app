@@ -14,6 +14,6 @@
   
 	set_error_handler("customError");
 
-	main();
+	echo file_get_contents("../templates/template.html");
 
 ?>

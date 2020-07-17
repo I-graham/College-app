@@ -5,14 +5,10 @@
 	}
 	set_error_handler("customError");
 */
-	function main {
-		$output = "";
+	$output = "";
 
-		$output .= file_get_contents("../templates/template.html");
+	$output .= file_get_contents("../templates/template.html");
 
-		echo $output;
-	}
-  
-	main();
+	echo $output;
 
 ?>

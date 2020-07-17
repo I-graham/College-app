@@ -5,7 +5,11 @@
 	}
 
 	function main {
-		return file_get_contents("../templates/template.html")
+		$output = "";
+
+		$output .= file_get_contents("../templates/template.html");
+
+		return $output;
 	}
   
 	set_error_handler("customError");

@@ -1,0 +1,28 @@
+body {
+	padding : 0;
+	margin : 0;
+}
+
+@font-face {
+	font-family: Bahn;
+	src : url("bahnschrift.ttf");
+}
+
+nav ul li {
+	list-style-type: none;
+	margin: 10pt;
+	padding: 0;
+	display: inline-block;
+	font-family: Bahn;
+}
+
+nav ul {
+	margin: auto;
+	padding: 0;
+	background-color: darkgrey;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+

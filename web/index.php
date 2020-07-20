@@ -7,7 +7,7 @@
 
 	$output = "";
 
-	$output .= file_get_contents("../templates/template.html");
+	$output .= file_get_contents("template.html");
 
 	echo $output;
 

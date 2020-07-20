@@ -1,7 +1,7 @@
 body {
 	padding : 0;
 	margin : 0;
-	background-color: rgb(230, 230, 230);
+	background-color: rgb(235, 235, 235);
 }
 
 @font-face {
@@ -14,12 +14,14 @@ nav {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	background-color: lightgrey;
+	background-color: rgb(200, 200, 200);
 	justify-content: space-evenly;
 }
 
 nav a {
 	/*transition: 0.75s;*/
+	height: 100%;
+	width: 100%;
 	text-decoration: none;
 	text-align: center;
 	list-style-type: none;
@@ -28,17 +30,19 @@ nav a {
 	display: table-cell;
 	font-family: Bahn;
 	vertical-align: middle;
-	font-size: larger;
+	font-size: x-large;
+	font-weight: 600;
+	background-clip: border-box;
 	color: rgb(95, 95, 95);
 }
 
 nav a:hover {
-	transition: 0.75s;
-	color: rgb(85, 163, 163);
+	transition: 0.5s;
+	color: rgb(111, 209, 209);
 }
 
 p {
-	font-size: 10pt;
+	font-size: 20pt;
 	color: black;
 }
 

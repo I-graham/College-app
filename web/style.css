@@ -1,6 +1,7 @@
 body {
 	padding : 0;
 	margin : 0;
+	background-color: rgb(230, 230, 230);
 }
 
 @font-face {
@@ -8,21 +9,47 @@ body {
 	src : url("bahnschrift.ttf");
 }
 
-nav ul li {
+nav {
+	width: 100%;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	background-color: lightgrey;
+	justify-content: space-evenly;
+}
+
+nav a {
+	/*transition: 0.75s;*/
+	text-decoration: none;
+	text-align: center;
 	list-style-type: none;
 	margin: 10pt;
 	padding: 0;
-	display: inline-block;
+	display: table-cell;
 	font-family: Bahn;
+	vertical-align: middle;
+	font-size: larger;
+	color: rgb(95, 95, 95);
 }
 
-nav ul {
-	margin: auto;
-	padding: 0;
-	background-color: darkgrey;
+nav a:hover {
+	transition: 0.75s;
+	color: rgb(85, 163, 163);
 }
 
-body {
-	font-family: 'Raleway', sans-serif;
+p {
+	font-size: 10pt;
+	color: black;
 }
 
+#content {
+	font-family: Bahn, sans-serif;
+	padding : 15pt;
+}
+
+.slogan {
+	text-align: center;
+	font-size: 40pt;
+	font-weight: bold;
+	color: black;
+}

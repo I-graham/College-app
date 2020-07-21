@@ -11,32 +11,33 @@ body {
 
 nav {
 	width: 100%;
+	height: 43pt;
 	display: flex;
 	background-color: rgb(200, 200, 200);
 	justify-content: space-evenly;
 }
 
 nav a {
-	/*transition: 0.75s;*/
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
 	text-align: center;
 	list-style-type: none;
-	margin: 10pt;
+	margin: 10pt auto;
 	padding: 0;
-	display: table-cell;
 	font-family: Bahn;
 	vertical-align: middle;
 	font-size: x-large;
 	font-weight: 600;
 	background-clip: border-box;
 	color: rgb(95, 95, 95);
+	transition: font-size 0.2s;
 }
 
 nav a:hover {
-	transition: 0.5s;
-	color: rgb(76, 75, 109);
+	transition: 0.3s;
+	font-size: xx-large;
+	color: rgb(105, 103, 201);
 }
 
 p {
@@ -49,9 +50,30 @@ p {
 	padding : 15pt;
 }
 
-.slogan {
+#slogan {
 	text-align: center;
 	font-size: 40pt;
 	font-weight: bold;
 	color: black;
+	text-align: left;
+}
+
+#subtitle {
+	text-align: left;
+	font-size: 20pt;
+	color: blue;
+}
+
+#banner {
+	background-image: url('https://www.fastweb.com/uploads/article_photo/photo/2037688/crop635w_important-aspects-of-college-applications.jpg');
+	overflow: hidden;
+	background-clip: border-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	font-family: bahn;
+	text-shadow: -1pt 0 black, 0 1pt black, 1pt 0 black, 0 -1pt black;
+	color: lightgrey;
+	
 }

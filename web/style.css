@@ -13,7 +13,7 @@ nav {
 	width: 100%;
 	height: 43pt;
 	display: flex;
-	background-color: rgb(200, 200, 200);
+	background-color: rgb(255, 97, 97);
 	justify-content: space-evenly;
 }
 
@@ -30,7 +30,7 @@ nav a {
 	font-size: x-large;
 	font-weight: 600;
 	background-clip: border-box;
-	color: rgb(95, 95, 95);
+	color: rgb(34, 34, 34);
 	transition: font-size 0.2s;
 }
 
@@ -69,10 +69,8 @@ p {
 }
 
 #banner {
-	height: 100pt;
-	line-height: 100pt;
 	vertical-align: middle;
-	background-image: url('https://www.fastweb.com/uploads/article_photo/photo/2037688/crop635w_important-aspects-of-college-applications.jpg');
+	background-color: rgb(116, 142, 143);
 	overflow: hidden;
 	background-clip: border-box;
 	background-repeat: no-repeat;

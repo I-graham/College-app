@@ -11,4 +11,8 @@
 
 	echo $output;
 
+	$x = 0;
+
+	echo (1 / $x); 
+
 ?>

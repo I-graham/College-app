@@ -18,7 +18,7 @@
 		$db["host"],
 		$db["port"],
 		$db["user"],
-		$db["pass"],
+		$db["pas"],
 		ltrim($db["path"], "/")
 	));
 

@@ -5,51 +5,58 @@ body {
 }
 
 @font-face {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Sans;
 	src : url("OpenSans-ExtraBold.ttf");
 }
 
 nav {
 	width: 100%;
-	height: 50pt;
+	margin: 0;
+	padding: 0;
 	display: flex;
 	background-color: white;
 	justify-content: space-evenly;
+	border-bottom: 1.5pt solid rgb(146, 146, 146);
 }
 
 nav a {
-	height: 100%;
+	margin : 5pt !important;
+	padding : auto !important;
+	line-height: 40pt;
+	height : 40pt;
 	width: 100%;
 	text-decoration: none;
 	text-align: center;
 	list-style-type: none;
 	margin: 10pt auto;
 	padding: 0;
-	font-family: Bahn;
-	vertical-align: middle;
+	font-family: Sans;
 	font-size: x-large;
 	font-weight: 600;
 	background-clip: border-box;
 	color: #5271ff;
-	transition: font-size 0.2s;
+	transition: font-weight 0.2s;
 	transition: font-color 0.2s;
 }
 
-#logo {
-	margin: 10px 8000px 10px 100px;
+#getstarted {
+	font-weight: bold;
+	background-color: rgb(255, 159, 28);
+	border-radius: 10pt;
+	transition: background-color 0.3s linear;
+	-o-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;
+    -webkit-transition: background-color 0.5s linear;
 }
 
-#login {
-	margin: 10px 100px 10px 10px;
-}
-
-#getstartednav {
-	margin: 10px 100px 10px 100px;
+#getstarted:hover {
+	background-color: rgb(255, 174, 61);
 }
 
 nav a:hover {
 	transition: 0.2s;
-	font-size: xx-large;
+	font-weight: 900;
 	color: #3b459e;
 }
 
@@ -59,7 +66,7 @@ p {
 }
 
 #content {
-	font-family: Bahn, sans-serif;
+	font-family: Sans, sans-serif;
 	padding : 0;
 	margin : 0;
 	width: 100%;
@@ -93,7 +100,7 @@ p {
 	text-align: center;
 	margin : auto 0;
 	padding : 0;
-	font-family: bahn;
+	font-family: Sans;
 	color: rgb(214, 240, 239);
 }
 */

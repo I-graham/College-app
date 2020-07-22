@@ -35,10 +35,22 @@ nav a {
 	transition: font-color 0.2s;
 }
 
+#logo {
+	margin: 10px 8000px 10px 100px;
+}
+
+#login {
+	margin: 10px 100px 10px 10px;
+}
+
+#getstartednav {
+	margin: 10px 100px 10px 100px;
+}
+
 nav a:hover {
 	transition: 0.2s;
-	font-size: medium;
-	color: rgb(214, 240, 239);
+	font-size: xx-large;
+	color: #3b459e;
 }
 
 p {
@@ -58,10 +70,10 @@ p {
 	margin : auto;
 	margin-bottom: 10pt;
 	padding: 0;
-	text-align: center;
+	text-align: left;
 	font-size: 40pt;
 	font-weight: bold;
-	color: rgb(58, 80, 107);
+	color: black;
 }
 
 #subtitle {

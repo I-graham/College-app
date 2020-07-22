@@ -11,8 +11,13 @@
 
 	echo $output;
 
-	$x = 0;
-
-	echo (1 / $x); 
+	$pdo = new PDO("pgsql:" . sprintf(
+		"host=%s;port=%s;user=%s;password=%s;dbname=%s",
+		$db["host"],
+		$db["port"],
+		$db["user"],
+		$db["pass"],
+		ltrim($db["path"], "/")
+	));
 
 ?>

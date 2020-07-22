@@ -22,6 +22,6 @@
 		ltrim($db["path"], "/")
 	));
 
-	echo $pdo->errorInfo();
+	print_r($pdo->errorInfo());
 
 ?>

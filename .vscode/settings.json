@@ -2,7 +2,6 @@
   "files.exclude": {
     ".gitignore": true,
     "composer.json": true,
-    ".vscode": true,
-    "index.php": true
+    ".vscode": true
   }
 }

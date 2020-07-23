@@ -9,7 +9,6 @@
 	
 	$output .= file_get_contents("sql.html");
 	
-	
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		
 		$db = parse_url(getenv("DATABASE_URL"));
@@ -27,8 +26,7 @@
 			
 			$command = $_REQUEST["command"];
 
-			str_replace("OUTPUT", $pdo->exec($command), $output);
-			
+//			str_replace("OUTPUT", $pdo->exec($command), $output);	
 			
 		}
 	}

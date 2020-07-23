@@ -31,7 +31,7 @@
 
 			$command = $_REQUEST["command"];
 			
-			//str_replace("OUTPUT", $pdo->exec($command), $output);	
+			str_replace("OUTPUT", $pdo->exec($command), $output);	
 			
 		}
 	} else {

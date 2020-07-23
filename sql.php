@@ -13,7 +13,8 @@
 
 	exit(200);
 
-/*	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		/*
 
 		$db = parse_url(getenv("DATABASE_URL"));
 	
@@ -33,6 +34,7 @@
 			str_replace("OUTPUT", $pdo->exec($command), $output);
 
 		}
-	}*/
+		*/
+	}
 
 ?>

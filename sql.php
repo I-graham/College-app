@@ -28,15 +28,20 @@
 
 			$command = $_REQUEST["command"];
 			
+			echo "Output : \n";
+
+			if ($_SERVER["submit"] == "query") {
+				$pdo_out = $pdo->query($command);
+				foreach($pdo_out as $row) {
+					print_r($row);
+					echo "===========================\n";
+				}
+			}
+
 			
-			str_replace("OUTPUT", $pdo->exec($command), $output);
-				
-			echo "executed : $command\n" . $output;
 			
 		}
-	} else {
-		str_replace("OUTPUT", "", $output);
-	}
+	} 
 
 	echo $output;
 ?>

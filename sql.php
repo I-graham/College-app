@@ -1,5 +1,5 @@
 <?php
-
+	
 	function customError($errno, $errstr) {
 		echo "<b>Error:</b> [$errno] $errstr";
 	}
@@ -7,9 +7,8 @@
 
 	$output = "";
 	
-	$output .= file_get_contents("template.html");
+	$output .= file_get_contents("sql.html");
 	
-	echo $output;
 	
 	$db = parse_url(getenv("DATABASE_URL"));
 	
@@ -21,5 +20,16 @@
 		$db["pass"],
 		ltrim($db["path"], "/")
 	));
+	
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		if ($_REQUEST["pass"] == "foobar") {
 
+			$command = $_REQUEST["command"]
+	
+			str_replace("OUTPUT", $pdo->exec($command), $output);
+
+		}
+	}
+
+	echo $output;
 ?>

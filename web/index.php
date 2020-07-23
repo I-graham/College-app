@@ -22,7 +22,7 @@
 		ltrim($db["path"], "/")
 	));
 
-	echo $pdo->getAvailableDrivers();
+	print_r($pdo->getAvailableDrivers());
 
 
 ?>

@@ -41,7 +41,7 @@ nav a:hover {
 	color: #3b459e;
 }
 
-#getstarted {
+.getstarted {
 	font-weight: bold;
 	background-size : 80%;
 	background-color: rgb(255, 159, 28);
@@ -49,7 +49,7 @@ nav a:hover {
 	transition: background-color 0.3s linear;
 }
 
-#getstarted:hover {
+.getstarted:hover {
 	background-color: rgb(255, 174, 61);
 }
 

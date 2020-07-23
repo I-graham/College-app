@@ -20,21 +20,20 @@ nav {
 }
 
 nav a {
-	margin: 5pt !important;
+	margin: 5pt;
 	line-height: 40pt;
 	height: 40pt;
 	width: 100%;
 	text-decoration: none;
 	text-align: center;
 	list-style-type: none;
-	margin: 10pt auto;
 	padding: 0;
 	font-family: Sans;
 	font-size: x-large;
 	font-weight: 600;
 	background-clip: border-box;
 	color: #5271ff;
-	transition: color 0.4s linear !important;
+	transition: color 0.4s linear f;
 }
 
 nav a:hover {
@@ -62,24 +61,31 @@ p {
 #content {
 	font-family: Sans, sans-serif;
 	padding : 0;
-	margin : 0;
+	margin-left: 6%;
 	width: 100%;
 }
 
 .slogan {
-	width : 80%;
-	margin : auto;
-	margin-bottom: 10pt;
+	width : 40%;
+	padding-left: 10%;
+	margin : 0;
+	margin-bottom: 5pt;
 	padding: 0;
 	text-align: left;
-	font-size: 40pt;
+	font-size: 37pt;
 	font-weight: bold;
 	color: black;
+	display: inline-block;
 }
 
-#subtitle {
+.caption {
+	width : 50%;
+
+}
+ 
+.subtitle {
 	text-align: left;
-	font-size: 20pt;
+	font-size: 15pt;
 	color: #5271ff;
 }
 

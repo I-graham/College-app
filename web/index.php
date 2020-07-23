@@ -6,7 +6,8 @@
 	set_error_handler("customError");
 
 	$output = "";
-
+	
+	echo $pdo->rowCount();
 	$output .= file_get_contents("template.html");
 
 	echo $output;
@@ -22,6 +23,5 @@
 		ltrim($db["path"], "/")
 	));
 
-	print_r($pdo->rowCount());
 
 ?>

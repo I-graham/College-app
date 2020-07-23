@@ -30,7 +30,7 @@
 			
 			echo "Output : \n";
 
-			if ($_SERVER["submit"] == "query") {
+			if ($_REQUEST["submit"] == "query") {
 				$pdo_out = $pdo->query($command);
 				foreach($pdo_out as $row) {
 					print_r($row);

@@ -36,6 +36,8 @@
 					print_r($row);
 					echo "===========================\n";
 				}
+			} else if ($_REQUEST["submit"] == "query") {
+				echo $pdo->exec($command);
 			}
 
 			

@@ -21,7 +21,8 @@
 		$db["pass"],
 		ltrim($db["path"], "/")
 	));
-	echo $pdo->rowCount();
+
+	echo $pdo->getAvailableDrivers();
 
 
 ?>

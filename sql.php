@@ -1,6 +1,3 @@
-<!--Super Secret Page that no one can see and that'll be deleted later.-->
-
-
 <?php
 	
 	function customError($errno, $errstr) {
@@ -31,11 +28,14 @@
 
 			$command = $_REQUEST["command"];
 			
+			echo "executed : $command\n";
+
 			str_replace("OUTPUT", $pdo->exec($command), $output);	
 			
 		}
 	} else {
 		str_replace("OUTPUT", "", $output);
 	}
+
 	echo $output;
 ?>

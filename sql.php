@@ -28,9 +28,10 @@
 
 			$command = $_REQUEST["command"];
 			
-			echo "executed : $command\n";
-
-			str_replace("OUTPUT", $pdo->exec($command), $output);	
+			
+			str_replace("OUTPUT", $pdo->exec($command), $output);
+				
+			echo "executed : $command\n" . $output;
 			
 		}
 	} else {

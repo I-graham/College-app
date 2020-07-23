@@ -24,9 +24,11 @@
 				ltrim($db["path"], "/")
 			));
 
+			$pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 			$command = $_REQUEST["command"];
 
-			echo $pdo->exec($command);
+			echo $pdo->exec("CREATE TABLE users ( name VARCHAR(100) );");
 			
 			str_replace("OUTPUT", $pdo->exec($command), $output);	
 			

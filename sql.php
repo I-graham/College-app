@@ -9,6 +9,10 @@
 	
 	$output .= file_get_contents("sql.html");
 	
+	echo $output;
+
+	exit(200);
+
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		$db = parse_url(getenv("DATABASE_URL"));
@@ -31,5 +35,4 @@
 		}
 	}
 
-	echo $output;
 ?>

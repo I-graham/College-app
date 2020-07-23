@@ -13,10 +13,8 @@
 				
 		if ($_REQUEST["pass"] == "foobar") {
 			
-			echo "entered";
-
 			$db = parse_url(getenv("DATABASE_URL"));
-		
+			
 			$pdo = new PDO("pgsql:" . sprintf(
 				"host=%s;port=%s;user=%s;password=%s;dbname=%s",
 				$db["host"],
@@ -28,6 +26,8 @@
 
 			$command = $_REQUEST["command"];
 
+			echo $pdo->exec($command);
+			
 			str_replace("OUTPUT", $pdo->exec($command), $output);	
 			
 		}

@@ -1,3 +1,6 @@
+<!--Super Secret Page that no one can see and that'll be deleted later.-->
+
+
 <?php
 	
 	function customError($errno, $errstr) {
@@ -27,8 +30,6 @@
 			$pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 			$command = $_REQUEST["command"];
-
-			echo $pdo->exec("CREATE TABLE users ( name VARCHAR(100) );");
 			
 			str_replace("OUTPUT", $pdo->exec($command), $output);	
 			

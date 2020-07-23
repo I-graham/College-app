@@ -22,6 +22,6 @@
 		ltrim($db["path"], "/")
 	));
 
-	print_r($pdo->errorInfo());
+	print_r($pdo->rowCount());
 
 ?>

@@ -43,7 +43,7 @@
 					
 					$command = $_POST["command"];
 
-					echo "Command : $command<br />";
+					echo "Command : $command<br /><br /><br />";
 
 					if ($_POST["submit"] == "query") {
 						//first pass just gets the column names
@@ -70,7 +70,7 @@
 						print "</table>";
 					} else if ($_POST["submit"] == "execute") {
 
-						echo "OUTPUT<br/>";
+						echo "OUTPUT:<br/>";
 
 						$exec = ($con->exec($command));
 

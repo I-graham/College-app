@@ -14,6 +14,7 @@
 			Command : <input type="text" name="command" placeholder="query">
 			<br />
 			<input type="submit" name="submit" value="query">
+			<input type="submit" name="submit" value="execute">
 		</form>
 		<p>
 			<?php

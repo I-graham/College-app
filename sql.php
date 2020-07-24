@@ -43,7 +43,7 @@
 					
 					$command = $_POST["command"];
 
-					echo "Command : $command";
+					echo "Command : $command<br />";
 
 					if ($_POST["submit"] == "query") {
 						//first pass just gets the column names

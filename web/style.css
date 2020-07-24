@@ -69,7 +69,7 @@ p {
 }
 
 .slogan {
-	width : 40%;
+	width : 40%;	
 	padding-left: 10%;
 	margin : 0;
 	margin-bottom: 5pt;
@@ -110,13 +110,14 @@ p {
 	margin: auto;
 }
 
-/* .grid {
+.grid {
 	display: grid;
 	width: 100%;
 	height: 100%;
 	grid-template: 50% 50% / 50% 50%;
+	justify-items: center; 
 }
-*/
+
 
 #CTA {
 	width: 80%;
@@ -138,7 +139,7 @@ p {
 	font-size: 30pt;
 }
 
-footer {
+footer {	
 	width: 80%;
 	margin: auto;
 	padding: 30pt;	

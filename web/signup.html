@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<form method="POST" action="login.php">
+		Email : <input type="email" name="email" required/>
+		<br />
+		<br />
+		First Name : <input type="text" name="firstname" required/>
+		<br />
+		<br />
+		Last Name : <input type="text" name="lastname" required/>
+		<br />
+		<br />
+		Password : <input type="password" id="password" name="password" required/>
+		<br />
+		<br />
+		Confirm Password : <input type="password" id="confirm_password" name="password" required/>
+		<br />
+		<br />
+		<input type="submit" value="signup"/>
+	</form>
+	<script>
+		var password = document.getElementById("password");
+		var confirm_password = document.getElementById("confirm_password");
+
+		function validatePassword(){
+			if(password.value != confirm_password.value) {
+				confirm_password.setCustomValidity("Passwords Don't Match");
+			} else {
+				confirm_password.setCustomValidity('');
+			}
+		}
+
+		password.onchange = validatePassword;
+		confirm_password.onkeyup = validatePassword;
+	</script>
+</html>

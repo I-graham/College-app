@@ -6,8 +6,8 @@ body {
 }
 
 @font-face {
-	font-family: Dosis;
-	src : url("OpenDosis-ExtraBold.ttf");
+	font-family: Sans;
+	src : url("OpenSans-ExtraBold.ttf");
 }
 
 nav {
@@ -29,7 +29,7 @@ nav a {
 	text-align: center;
 	list-style-type: none;
 	padding: 0;
-	font-family: Dosis;
+	font-family: Sans;
 	font-size: x-large;
 	font-weight: 600;
 	background-clip: border-box;
@@ -61,7 +61,7 @@ p {
 }
 
 #content {
-	font-family: Dosis;
+	font-family: Sans;
 	padding: 0;
 	margin-left: 6%;
 	width: 100%;

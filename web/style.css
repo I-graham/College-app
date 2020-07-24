@@ -116,7 +116,8 @@ p {
 	height: 100%;
 	grid-template: 50% 50% / 50% 50%;
 	justify-items: center;
-	grid-row-gap: 40pt; 
+	grid-row-gap: 40pt;
+	border: 2px blue solid; 
 }
 
 .text1 {

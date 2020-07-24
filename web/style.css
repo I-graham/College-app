@@ -86,9 +86,9 @@ p {
 .caption {
 	width : 50%;
 	font-weight: 200;
-
+	margin-bottom: 1000pt;
 }
- 
+
 .subtitle {
 	text-align: left;
 	font-size: 15pt;

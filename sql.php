@@ -18,8 +18,8 @@
 		<p>
 			<?php
 
-				function customError($errno, $errstr) {
-					echo "<b>Error:</b> [$errno] $errstr\n";
+				function customError($errno, $errstr, $errfile, $errline) {
+					echo "<b>Error:</b> [$errno] '$errstr' in '$errfile', line $errline\n";
 				}
 				set_error_handler("customError");
 
@@ -40,26 +40,26 @@
 					
 					$query = $_POST["query"];
 					//first pass just gets the column names
-					print "<table> n";
+					print "<table>";
 					$result = $con->query($query);
 					//return only the first row (we only need field names)
 					$row = $result->fetch(PDO::FETCH_ASSOC);
-					print " <tr> n";
+					print " <tr>";
 					foreach ($row as $field => $value){
-						print " <th>$field</th> n";
+						print " <th>$field</th>";
 					} // end foreach
-					print " </tr> n";
+					print " </tr>n";
 					//second query gets the data
 					$data = $con->query($query);
 					$data->setFetchMode(PDO::FETCH_ASSOC);
 					foreach($data as $row){
 						print " <tr> n";
 						foreach ($row as $name=>$value){
-							print " <td>$value</td> n";
+							print " <td>$value</td>";
 						} // end field loop
-						print " </tr> n";
+						print " </tr>";
 					} // end record loop
-					print "</table> n";
+					print "</table>";
 				} catch(PDOException $e) {
 					 echo 'ERROR: ' . $e->getMessage();
 					} // end try

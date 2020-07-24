@@ -9,6 +9,8 @@
 	</head>
 	<body>
 		<form method="post">
+			Pass : <input type="text" name="pass" placeholder="pass">
+			<br />
 			Query : <input type="text" name="query" placeholder="query">
 			<br />
 			<input type="submit" name="submit" value="query">
@@ -30,7 +32,7 @@
 
 					$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					
-					$query = $_REQUEST["query"];
+					$query = $_POST["query"];
 					//first pass just gets the column names
 					print "<table> n";
 					$result = $con->query($query);

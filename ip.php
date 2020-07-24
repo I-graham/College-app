@@ -11,6 +11,10 @@
 		ltrim($db["path"], "/")
 	));
 
+	$ip = $_SERVER['REMOTE_ADDR'];
+	$details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
+	echo $details->city;
+
 	$prep = $con->prepare("INSERT INTO ip VALUES (?)");
 
 	$prep->bindParam(1, $_SERVER["REMOTE_ADDR"]);

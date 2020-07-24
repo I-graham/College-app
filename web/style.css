@@ -1,6 +1,7 @@
 body {
 	padding : 0;
 	margin : 0;
+	margin-bottom: 20pt;
 	background-color: rgb(255, 255, 255);
 }
 
@@ -78,13 +79,7 @@ p {
 	font-weight: bold;
 	color: black;
 	display: inline-block;
-}
-
-.slogan.cta {
-	text-align: center;
-	font-size: 30pt;
-	width: 100%;
-	margin-bottom: 5pt;
+	font-family: Sans;
 }
 
 .image {
@@ -116,13 +111,36 @@ p {
 }
 
 #CTA {
+	width: 80%;
+	margin: auto;
 	padding: 30pt;
 	background-color: #5271ff;
+	font-family: Sans;
 }
 
-#footer {
-	margin: 0;
+#CTA h2 {
+	margin: auto;
+	font-size: 30pt;
+	text-align: center;
+}
+
+#CTA .getstarted {
+	margin: auto;
+	text-align: center;
+	font-size: 30pt;
+}
+
+footer {
+	width: 80%;
+	margin: auto;
 	padding: 30pt;	
 	background-color: #e8f5ff;	
     border-top: 1pt solid #a3bce3;
 }		
+
+footer a {
+	text-decoration: none;
+	margin : auto;
+	font-family: Sans;
+	text-align: center;
+}

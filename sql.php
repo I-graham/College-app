@@ -35,9 +35,9 @@
 							$db["host"],
 							$db["port"],
 							$db["user"],
-						$db["pass"],
-						ltrim($db["path"], "/")
-					));
+							$db["pass"],
+							ltrim($db["path"], "/")
+						));
 					
 					$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					

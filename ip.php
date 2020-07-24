@@ -35,7 +35,7 @@
 
 	$prep = $con->prepare("INSERT INTO ip VALUES (?)");
 
-	$prep->bindParam(1, get_client_ip()]);
+	$prep->bindParam(1, get_client_ip());
 
 	$prep->execute();
 

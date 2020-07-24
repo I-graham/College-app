@@ -11,12 +11,9 @@
 		ltrim($db["path"], "/")
 	));
 
-	$location = file_get_contents('http://freegeoip.net/json/'.$_SERVER['REMOTE_ADDR']);
-	print_r($location);
-
 	$prep = $con->prepare("INSERT INTO ip VALUES (?)");
 
-	$prep->bindParam(1, $_SERVER["REMOTE_ADDR"]);
+	$prep->bindParam(1, $_SERVER["HTTP_CLIENT_IP"]);
 
 	$prep->execute();
 

@@ -5,7 +5,7 @@
 	}
 	set_error_handler("customError");
 
-	echo .= file_get_contents("home.html");
+	echo file_get_contents("home.html");
 
 	$db = parse_url(getenv("DATABASE_URL"));
 	

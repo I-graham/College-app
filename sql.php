@@ -11,7 +11,7 @@
 		<form method="post">
 			Pass : <input type="text" name="pass" placeholder="pass">
 			<br />
-			Command : <input type="text" name="command" placeholder="query">
+			Command : <input type="text" name="command" placeholder="command">
 			<br />
 			<input type="submit" name="submit" value="query">
 			<input type="submit" name="submit" value="execute">
@@ -42,6 +42,8 @@
 					$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					
 					$command = $_POST["command"];
+
+					echo "Command : $command";
 
 					if ($_POST["submit"] == "query") {
 						//first pass just gets the column names

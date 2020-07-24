@@ -64,6 +64,7 @@ p {
 	padding: 0;
 	margin-left: 6%;
 	width: 100%;
+	display: inline-block;
 }
 
 .slogan {
@@ -87,8 +88,7 @@ p {
 }
 
 .image {
-	width: 10%;
-
+	width: 50%;
 }
 
 .caption {
@@ -112,3 +112,15 @@ p {
 	font-size: 30pt;
 	margin: auto;
 }
+
+#CTA {
+	padding: 30pt;
+	background-color: #5271ff;
+}
+
+#footer {
+	margin: 0;
+	padding: 30pt;
+	background-color: #e8f5ff;	
+    border-top: 1pt solid #a3bce3;
+}		

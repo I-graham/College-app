@@ -77,7 +77,7 @@
 						if ($exec) {
 							echo (string)$exec . " rows changed.";
 						} else {
-							echo "something went wrong...<br/>";
+							echo "something went wrong...<br/> : $exec";
 						}
 
 					}

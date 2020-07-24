@@ -44,6 +44,7 @@
 					$result = $con->query($query);
 					//return only the first row (we only need field names)
 					$row = $result->fetch(PDO::FETCH_ASSOC);
+					print_r($row);
 					print " <tr>";
 					foreach ($row as $field => $value){
 						print " <th>$field</th>";
@@ -53,7 +54,7 @@
 					$data = $con->query($query);
 					$data->setFetchMode(PDO::FETCH_ASSOC);
 					foreach($data as $row){
-						print " <tr> n";
+						print " <tr>";
 						foreach ($row as $name=>$value){
 							print " <td>$value</td>";
 						} // end field loop

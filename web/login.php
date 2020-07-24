@@ -12,7 +12,13 @@ function signup() {
 		ltrim($db["path"], "/")
 	));
 
-	$con->query("SELECT ")
+	$existent = $con->prepare("SELECT * FROM login_info WHERE email=?;")
+
+	$existent->bindParam(1, $_POST["email"]);
+
+	$existent->execute();
+
+	echo $existent->rowCount();
 
 }
 

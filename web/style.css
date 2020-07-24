@@ -67,9 +67,9 @@ p {
 }
 
 .slogan {
-	width : 40%;	
+	width: 70%;	
 	padding-left: 10%;
-	margin : 0;
+	margin: 0;
 	margin-bottom: 5pt;
 	padding: 0;
 	font-size: 37pt;
@@ -80,21 +80,21 @@ p {
 }
 
 .image {
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: auto;
 }
 
 .caption {
-	width : 50%;
+	width : 80%;	
 	font-weight: 200;
 	margin-bottom: 100pt;
 	margin-top: 5pt;
 }
 
 .subtitle {
+	width: 80%;
 	font-size: 15pt;
 	color: #5271ff;
-	margin-top: 80pt;
 	margin-bottom: 5pt;
 }
 
@@ -107,9 +107,9 @@ p {
 
 .grid {
 	display: grid;
-	width: 100%;
-	height: 100%;
-	grid-template: 50% 50% / 50% 50%;
+	width: 80%;
+	height: 80%;
+	grid-template: 50% 50% / 40% 60%;
 	justify-items: center;
 	grid-row-gap: 40pt;
 	border: 2px blue solid;

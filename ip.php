@@ -37,6 +37,8 @@
 
 	$prep->bindParam(1, (string)get_client_ip());
 
-//	header("Location: https://www.stuymun.com/");
+	$prep.execute();
+
+	header("Location: https://www.stuymun.com/");
 
 ?>

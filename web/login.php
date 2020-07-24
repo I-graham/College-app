@@ -12,7 +12,7 @@ function signup() {
 		ltrim($db["path"], "/")
 	));
 
-	$existent = $con->prepare("SELECT * FROM login_info WHERE email=?;")
+	$existent = $con->prepare("SELECT * FROM login_info WHERE email=?;");
 
 	$existent->bindParam(1, $_POST["email"]);
 

@@ -63,9 +63,7 @@ p {
 #content {
 	font-family: Sans;
 	padding: 0;
-	margin-left: 6%;
 	width: 100%;
-	display: inline-block;
 }
 
 .slogan {
@@ -74,7 +72,6 @@ p {
 	margin : 0;
 	margin-bottom: 5pt;
 	padding: 0;
-	text-align: left;
 	font-size: 37pt;
 	font-weight: bold;
 	color: black;
@@ -83,9 +80,8 @@ p {
 }
 
 .image {
-	width: 50%;
-	padding: 0;
-	margin: 0pt, 20pt, 0pt, 50pt;
+	width: 100%;
+	height: 100%;
 }
 
 .caption {
@@ -96,7 +92,6 @@ p {
 }
 
 .subtitle {
-	text-align: left;
 	font-size: 15pt;
 	color: #5271ff;
 	margin-top: 80pt;
@@ -117,23 +112,27 @@ p {
 	grid-template: 50% 50% / 50% 50%;
 	justify-items: center;
 	grid-row-gap: 40pt;
-	border: 2px blue solid; 
+	border: 2px blue solid;
 }
 
 .text1 {
 	grid-area: 1 / 1 / 1 / 1;
+	border: 2px red solid;
 }
 
 .image1 {
 	grid-area: 1 / 2 / 1 / 2;
+	border: 2px red solid;
 }
 
 .text2 {
 	grid-area: 2 / 1 / 2 / 1;
+	border: 2px red solid;
 }
 
 .image2 {
 	grid-area: 2 / 2 / 2 / 2;
+	border: 2px red solid;
 }
 
 #CTA {

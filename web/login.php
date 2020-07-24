@@ -12,7 +12,8 @@ function signup() {
 		ltrim($db["path"], "/")
 	));
 
-	
+	$con->query("SELECT ")
+
 }
 
 function login() {

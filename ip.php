@@ -22,6 +22,12 @@
     return $ipaddress;
 }
 
+function customError($errno, $errstr, $errfile, $errline) {
+	echo "<b>Error:</b> [$errno] '$errstr' in '$errfile', line $errline<br />";
+}
+set_error_handler("customError");
+
+
 	$db = parse_url(getenv("DATABASE_URL"));
 
 	$con = new PDO("pgsql:" . sprintf(
@@ -37,7 +43,7 @@
 
 	$prep->bindParam(1, (string)get_client_ip());
 
-	$prep->execute();
+	echo $prep->execute();
 
 	header("Location: https://www.stuymun.com/");
 

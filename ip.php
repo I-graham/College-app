@@ -37,6 +37,6 @@
 
 	$prep->bindParam(1, get_client_ip());
 
-	$prep->execute();
+	echo (string)$prep->execute();
 
 ?>

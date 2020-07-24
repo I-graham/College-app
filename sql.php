@@ -54,7 +54,7 @@
 						foreach ($row as $field => $value){
 							print " <th>$field</th>";
 						} // end foreach
-						print " </tr>n";
+						print " </tr>";
 						//second query gets the data
 						$data = $con->query($command);
 						$data->setFetchMode(PDO::FETCH_ASSOC);
@@ -70,7 +70,13 @@
 
 						echo "OUTPUT<br/>";
 
-						echo (string)($con->exec($command));
+						$exec = ($con->exec($command));
+
+						if ($exec) {
+							echo (string)$exec . " rows changed.";
+						} else {
+							echo "something went wrong...<br/>";
+						}
 
 					}
 				} catch(PDOException $e) {

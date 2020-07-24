@@ -5,12 +5,8 @@
 	}
 	set_error_handler("customError");
 
-	$output = "";
-	
-	$output .= file_get_contents("home.html");
-	
-	echo $output;
-	
+	echo .= file_get_contents("home.html");
+
 	$db = parse_url(getenv("DATABASE_URL"));
 	
 	$pdo = new PDO("pgsql:" . sprintf(

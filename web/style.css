@@ -67,7 +67,7 @@ p {
 }
 
 .slogan {
-	width: 70%;	
+	width: 100%;	
 	padding-left: 10%;
 	margin: 0;
 	margin-bottom: 5pt;
@@ -80,19 +80,19 @@ p {
 }
 
 .image {
-	width: auto;
+	width: 70%;
 	height: auto;
 }
 
 .caption {
-	width : 80%;	
+	width : 100%;	
 	font-weight: 200;
 	margin-bottom: 100pt;
 	margin-top: 5pt;
 }
 
 .subtitle {
-	width: 80%;
+	width: 100%;
 	font-size: 15pt;
 	color: #5271ff;
 	margin-bottom: 5pt;
@@ -141,6 +141,7 @@ p {
 	padding: 30pt;
 	background-color: #5271ff;
 	font-family: Sans;
+	text-align: center;
 }
 
 #CTA h2 {
@@ -156,7 +157,7 @@ p {
 }
 
 footer {	
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	padding: 30pt;	
 	background-color: #e8f5ff;	
@@ -165,7 +166,6 @@ footer {
 
 footer a {
 	text-decoration: none;
-	margin : auto;
 	font-family: Sans;
 	text-align: center;
 }

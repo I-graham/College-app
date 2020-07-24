@@ -40,8 +40,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		default:
 			redirect();
 	}
-} else {
-	redirect();
+} else if ($_SERVER["REQUEST_METHOD"] == "GET"){
+
+	if (isset($_GET["type"]) && $_GET["type"] == "signup") {
+		echo file_get_contents("login.html");
+		exit();
+	}
+
 }
+
+echo file_get_contents("login.html");
 
 ?>

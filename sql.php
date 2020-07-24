@@ -17,6 +17,12 @@
 		</form>
 		<p>
 			<?php
+
+				function customError($errno, $errstr) {
+					echo "<b>Error:</b> [$errno] $errstr";
+				}
+				set_error_handler("customError");
+
 			if ($_SERVER["REQUEST_METHOD"] == "POST" and $_POST["pass"] == "foobar") {
 				try {
 					$db = parse_url(getenv("DATABASE_URL"));

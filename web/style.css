@@ -114,9 +114,7 @@ p {
 	display: grid;
 	width: 100%;
 	height: 100%;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 50% 50%;
-	grid-template: 
+	grid-template: 50% 50% / 50% 50%;
 }
 
 #CTA {
